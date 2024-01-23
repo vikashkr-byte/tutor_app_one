@@ -3,6 +3,7 @@ import {
     changeCurrentPassword,
     getCurrentUser,
     getJokes,
+    getJokester,
     getUserChannelProfile,
     loginUser,
     logoutUser,
@@ -20,6 +21,7 @@ const router = Router()
 
 // test routes
 router.route("/jokes").get(getJokes)
+router.route("/jokestar").get(getJokester)
 
 // register route
 router.route("/register").post(upload.fields([
