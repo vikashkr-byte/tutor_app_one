@@ -13,5 +13,5 @@ connectToDB()
             throw error
         })
         app.listen(PORT)
-        console.log(`Serving at http://localhost:${PORT}`);
+        console.log(`Serving at ${process.env.BASE_URL}`);
     })
